@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+	<title>hello</title>
+	<link rel="stylesheet" href="lib/css/jquery.mobile-1.0.1.css"></link>
+	<script src="lib/js/jquery-1.6.4.min.js"></script>
+	<script src="lib/js/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/tweet.js"></script>
+
+	<script type="text/javascript" src="lib/js/jTweetsAnywhere-1.3.1/jquery.jtweetsanywhere-1.3.1.min.js"></script>
+	<script type="text/javascript" src="lib/js/jTweetsAnywhere-1.3.1/jtweetsanywhere-de-1.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/js/jTweetsAnywhere-1.3.1/jquery.jtweetsanywhere-1.3.1.css" />
+<script type="text/javascript">
+<!--
+    $(function () {
+        $('#twts').jTweetsAnywhere({
+            searchParams: 'q=mokyu115',
+            count: 5,
+            showTweetFeed: {
+                autorefresh: {
+                    mode: 'trigger-insert',
+                    interval: 60
+                },
+                paging: {
+                    mode: 'more'
+                },
+                showTimestamp: {
+                    refreshInterval: 15
+                }
+            }
+
+        });
+    });
+//-->
+</script>
+
+    </head>
+    <body>
+	    <div data-role="page" id="top">
+			<div data-role="header">
+				<h1>トップ</h1>
+			</div> 
+			<div data-role="content">
+				<form id="testForm" action="">
+
+					<div id="twts"></div>
+				</form>
+				<ul data-role="listview" class="table">
+					<li data-theme="c">
+						<a href="#list" data-transition="slide">
+							<h3 class="ui-li-heading"></h3>
+							<p class="ui-li-desc">testes</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div data-role="footer" class="ui-bar ">
+				<div data-role="navbar">
+						<ul>
+							<li><a href="#top" class="ui-btn-active">One</a></li>
+							<li><a href="#top">Two</a></li>
+						</ul>
+				</div><!-- /navbar -->
+	        </div>
+        </div>
+    </body>
+</html>
